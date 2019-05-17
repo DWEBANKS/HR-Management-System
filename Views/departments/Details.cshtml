@@ -1,0 +1,27 @@
+﻿@model WebApplication1hrsystem.Models.departments
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>departments</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Dept_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dept_name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Dept_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
